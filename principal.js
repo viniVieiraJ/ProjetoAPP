@@ -63,7 +63,7 @@ function renderTodos() {
 
         var pos = todos.indexOf(todo);
 
-        linkElement.setAttribute("onclick", "DeleteTodo(" + pos + ")")
+        linkElement.setAttribute("onclick", "DeletarTodo(" + pos + ")")
 
         var linkText = document.createTextNode(" Excluir");
 
@@ -89,7 +89,7 @@ function addTodo() {
 
 buttonElement.onclick = addTodo;
 
-function DeleteTodo(pos) {
+function DeletarTodo(pos) {
     todos.splice(pos, 1)
     renderTodos();
     saveToStorage();
