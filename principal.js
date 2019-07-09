@@ -95,4 +95,7 @@ function DeletarTodo(pos) {
     saveToStorage();
 }
 
-
+function saveToStorage() 
+{ 
+    localStorage.setItem("list_todos", JSON.stringify(todos)); 
+}
